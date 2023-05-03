@@ -1,0 +1,309 @@
+html{
+    font-size:62.5%
+}
+
+body{
+    background-image: url("../images/bg_body.svg");
+    background-color: rgba(68, 68, 68,1.0);
+    font-size: 1.6em;
+    font-family: 'Roboto Slab', serif;
+}
+
+header{
+    max-width:80%;
+    margin:20px auto 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:linear-gradient(155deg, rgba(255,255,255,1) 50%, rgba(51,51,51,1) 50%);
+}
+
+header img{
+    width:70%;
+    margin:20px;
+}
+
+header nav{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    height:60%;
+    margin-top:3rem;
+}
+
+header nav li{
+    text-align:right;
+    margin-bottom:3rem;
+    padding-right:4rem;
+    font-size:1.4em;
+}
+
+ul, li{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+header a{
+    text-decoration:none;
+    color:#fff;
+}
+
+/************************************ MAIN ***************************/
+
+main h1{
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center;
+    max-width:80%;
+    margin:50px auto 0 auto;
+    font-size:3.2rem;
+}
+
+main h1 span{
+    color:#FF9D00;
+}
+
+main h2{
+    margin-top:100px;
+    text-transform:uppercase;
+    line-height:5rem;
+    max-width:80%;
+    margin:auto;
+    font-size:2em;
+    color:#fff;
+}
+
+main h2 span{
+    color:#FF9D00;
+}
+
+main article{
+    max-width:80%;
+    margin:30px auto;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:20px;
+}
+
+main article img{
+    max-width:100%;
+}
+
+article h3{
+    color:#FF9D00;
+    text-transform:uppercase;
+    font-size:1.8em;
+    margin:10px auto;
+    
+}
+
+hr{
+    width:80%;
+    color:#FF9D00;
+    margin:0;
+}
+
+article p{
+    max-width:80%;
+    margin:15px auto;
+    text-align:center;
+    line-height:3rem;
+    color:grey;
+    font-size:1.4rem;
+}
+
+article button{
+    color:#fff;
+    background-color:#FF9D00;
+    border:none;
+    padding:1.2rem;
+    font-size:1.5rem;
+    font-weight:100;
+    width:80%;
+    text-align:center;
+}
+main h2:nth-child(2){
+    margin-bottom:150px;
+}
+
+.section-social-network p{
+    max-width:80%;
+    margin:10px auto;
+    text-align:center;
+    line-height:3rem;
+    color:grey;
+    font-size:1.4rem;
+}
+
+.container-icon{
+    display:flex;
+    flex-direction:column;
+    margin:40px auto;
+}
+
+.container-icon i{
+    color:#fff;
+    font-size:4rem;
+    text-align:center;
+    padding:15px ;
+}
+
+video{
+    display:block;
+    max-width:80%;
+    margin: 0 auto 150px auto;
+}
+
+/****************************** FOOTER *************************/
+
+
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:80px auto 0 auto;
+    text-align:center;
+    padding:20px;
+    background-color:rgba(150,150,150,0.1);
+    max-width:80%;
+    box-shadow: 2px -10px 5px 0px #404040;
+}
+
+footer h3{
+    color:#ccc;
+    text-align:center;
+    margin-top:50px;
+}
+
+footer p:nth-child(2){ /* 1ER P */
+    text-align:center;
+    max-width:60%;
+    margin:auto;
+    line-height:3rem;
+    color:#aaa;
+    font-size:1.5rem;
+    font-weight:400;
+}
+
+footer p:nth-child(5), footer p:nth-child(6){
+    text-align:center;
+    max-width:60%;
+    margin:auto;
+    line-height:3rem;
+    color:#aaa;
+    font-size:1rem;
+    color:#aaa;
+    font-weight:200;
+}
+
+footer nav{
+    display:flex;
+    flex-wrap:wrap;
+    width:80%;
+    padding:30px 0;
+}
+
+footer nav ul{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+footer nav li{
+    padding:0 20px;
+    text-align:center;
+    line-height:2;
+}
+footer nav a {
+    color:#fff;
+}
+footer img{
+    width:30px;
+    margin-bottom:5px;
+}
+
+footer p:nth-child(5) a, footer p:nth-child(6) a{
+    font-size:1.2em;
+    color:#fff;
+}
+
+
+
+@media screen and (min-width:768px){
+    
+    header{
+        flex-direction:row;
+        justify-content:none;
+        background: linear-gradient(125deg, rgba(255,255,255,1) 50%, rgba(51,51,51,1) 50%);
+    }
+    
+    header img{
+        width:35%;
+        margin:30px;
+    }
+    
+    header nav{
+        width:65%
+    }
+
+    video{
+        width:100%;
+        margin: 0 auto 150px auto;
+    }
+}
+
+@media screen and (min-width:800px){
+    
+    header{
+        height:180px;
+    }
+    
+    header img{
+        width:auto;
+    }
+    
+    main h2{
+        padding-left:50px
+    }
+    
+    .section-motos{
+        display:flex;
+        max-width:80%;
+        margin:auto;
+    }
+    
+    main article{
+        margin:30px 10px 100px 10px;
+    }
+    
+    .section-social-network{
+        display:flex;
+        width:80%;
+        margin:auto;
+    }
+    
+    .container-icon{
+        display:flex;
+        flex-direction:row;
+        max-width:70%;
+    }
+    
+    .container-icon i{
+        margin-right:50px;
+    }
+    video{
+        max-width:50%;
+    }
+    
+    footer{
+        max-width:100%;
+    }
+    
+    .clear{
+        clear:both;
+    }
+}
